@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+TOOLCHAIN=${VIVO_SDK:-/opt/vivo-ndk/ndk}
+
+cmake -DCMAKE_SYSTEM_NAME=Android \
+      -DCMAKE_ANDROID_STANDALONE_TOOLCHAIN=$TOOLCHAIN \
+      ..
